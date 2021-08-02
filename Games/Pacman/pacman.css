@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.row>div{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.brick{
+    background-color: blue;
+
+}
+.coin{
+    background-image: url('Coin.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 12px 12px;
+}
+.pacmanLeft{
+    background-image: url('pacman.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 18px 18px;
+    transform: scaleX(-1);
+}
+.pacmanRight{
+    background-image: url('pacman.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 18px 18px;
+    transform: scaleX(1);
+}
+.pacmanUp{
+    background-image: url('pacman.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 18px 18px;
+    transform: rotate(270deg);
+}
+.pacmanDown{
+    background-image: url('pacman.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 18px 18px;
+    transform: rotate(90deg);
+}
+.empty{
+
+}
+.coinXL{
+    background-image: url('Coin.gif');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 125%;
+}
+#score{
+    position: absolute;
+    top: 5px;
+    left: 700px;
+    border:2px solid blue;
+    height: 100px;
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#score>*{
+    color: white;
+}
